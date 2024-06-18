@@ -4,7 +4,7 @@ MA-AVT is a new parameter-efficient audio-visual transformer employing deep moda
 
 
 <div align="center">
-  <img width="100%" alt="MA-AVT Illustration" src="Figures/framework.png">
+  <img width="60%" alt="MA-AVT Illustration" src="Figures/framework.png">
 </div>
 
 
@@ -62,5 +62,19 @@ For testing and visualization, simply run
                 --multimodal_token --contrastive blockwise_sep --port 23145
 ```
 
-### 👍 Acknowledgments
+## 👍 Acknowledgments
 This codebase is based on [LAVISH](https://github.com/GenjiB/LAVISH) and [OGM-GE](https://github.com/GeWu-Lab/OGM-GE_CVPR2022). Thanks for their amazing works.
+
+
+## Citation
+If you find this work useful, please consider citing our paper:
+
+### BibTeX
+```bibtex
+@misc{mahmud2024maavt,
+      title={MA-AVT: Modality Alignment for Parameter-Efficient Audio-Visual Transformers}, 
+      author={Tanvir Mahmud and Shentong Mo and Yapeng Tian and Diana Marculescu},
+      year={2024},
+      eprint={2406.04930},
+      archivePrefix={arXiv}
+  }
