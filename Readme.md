@@ -1,4 +1,11 @@
-# MA-AVT: Modality Alignment for Parameter-Efficient Audio-Visual Transformers (CVPRW 2024, Oral)
+**[MA-AVT: Modality Alignment for Parameter-Efficient Audio-Visual Transformers (CVPRW 2024, Oral)](https://arxiv.org/abs/2406.04930)**
+<br/>
+[Tanvir Mahmud](https://sites.google.com/view/tanvirmahmud),
+[Shentong Mo](https://scholar.google.com/citations?user=6aYncPAAAAAJ&hl=en),
+[Yapeng Tian](https://www.yapengtian.com/),
+[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)
+<br/>
+
 
 MA-AVT is a new parameter-efficient audio-visual transformer employing deep modality alignment for multimodal semantic feature correspondence.
 
@@ -64,6 +71,9 @@ For testing and visualization, simply run
 
 ## 👍 Acknowledgments
 This codebase is based on [LAVISH](https://github.com/GenjiB/LAVISH) and [OGM-GE](https://github.com/GeWu-Lab/OGM-GE_CVPR2022). Thanks for their amazing works.
+
+## LICENSE
+MA-AVT is licensed under a [UT Austin Research LICENSE](./LICENSE).
 
 
 ## Citation
