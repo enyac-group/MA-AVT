@@ -36,76 +36,30 @@ Data can be downloaded from [CREMA-D: Crowd-sourced emotional multimodal actors 
 
 For training the MA-AVT model, please run
 
-```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train_avm_vit.py \
-                --id MA-AVT \
-                --dataset vggsound \
-                --data_dir /path/to/LAVISH/data/VGGSound \
-                --batch_size 256 \
-                --epochs 50 \
-                --num_class 309 \
-                --output_dir /path/to/outputs/ \
-                --fps 1 \
-                --lr 0.01 \
-                --lr_step 15 \
-                --mode train \
-                --model ma_avt \
-                --vis_encoder_type vit \
-                --vit_type base \
-                --pretrained \
-                --multiprocessing_distributed \
-                --ngpu 4 \
-                --LSA \
-                --print_freq 10 \
-                --num_vis 24 \
-                --n_audio_tokens 5 \
-                --n_vis_tokens 5 \
-                --n_shared_tokens 5 \
-                --bg_label -1 \
-                --bg_cls \
-                --bg_prob 0.2 \
-                --unimodal_token \
-                --multimodal_token \
-                --contrastive blockwise_sep \
-                --port 23145
+```python 
+        python train_avm_vit.py --id MA-AVT --dataset vggsound \
+                --data_dir /path/to/LAVISH/data/VGGSound --batch_size 256 --epochs 50 \
+                --num_class 309 --output_dir /path/to/outputs/ --fps 1 --lr 0.01 \
+                --lr_step 15 --mode train --model ma_avt --vis_encoder_type vit \
+                --vit_type base --pretrained --multiprocessing_distributed --ngpu 4 \
+                --LSA --print_freq 10 --num_vis 24 --n_audio_tokens 5 --n_vis_tokens 5 \
+                --n_shared_tokens 5 --bg_label -1 --bg_cls --bg_prob 0.2 --unimodal_token \
+                --multimodal_token --contrastive blockwise_sep --port 23145
 ```
 
 ## Test
 
 For testing and visualization, simply run
 
-```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train_avm_vit.py \
-                --id MA-AVT \
-                --dataset vggsound \
-                --data_dir /path/to/LAVISH/data/VGGSound \
-                --batch_size 256 \
-                --epochs 50 \
-                --num_class 309 \
-                --output_dir /path/to/outputs/ \
-                --fps 1 \
-                --lr 0.01 \
-                --lr_step 15 \
-                --mode test \
-                --model ma_avt \
-                --vis_encoder_type vit \
-                --vit_type base \
-                --pretrained \
-                --multiprocessing_distributed \
-                --ngpu 4 \
-                --LSA \
-                --print_freq 10 \
-                --num_vis 24 \
-                --n_audio_tokens 5 \
-                --n_vis_tokens 5 \
-                --n_shared_tokens 5 \
-                --bg_label -1 \
-                --bg_cls \
-                --bg_prob 0.2 \
-                --unimodal_token \
-                --multimodal_token \
-                --contrastive blockwise_sep \
-                --port 23145
+```python
+      python train_avm_vit.py --id MA-AVT --dataset vggsound \
+                --data_dir /path/to/LAVISH/data/VGGSound --batch_size 256 --epochs 50 \
+                --num_class 309 --output_dir /path/to/outputs/ --fps 1 --lr 0.01 \
+                --lr_step 15 --mode test --model ma_avt --vis_encoder_type vit \
+                --vit_type base --pretrained --multiprocessing_distributed --ngpu 4 \
+                --LSA --print_freq 10 --num_vis 24 --n_audio_tokens 5 --n_vis_tokens 5 \
+                --n_shared_tokens 5 --bg_label -1 --bg_cls --bg_prob 0.2 --unimodal_token \
+                --multimodal_token --contrastive blockwise_sep --port 23145
 ```
 
 ### 👍 Acknowledgments
