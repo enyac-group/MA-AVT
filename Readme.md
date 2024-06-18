@@ -79,7 +79,7 @@ MA-AVT is licensed under a [UT Austin Research LICENSE](./LICENSE).
 ## Citation
 If you find this work useful, please consider citing our paper:
 
-### BibTeX
+## BibTeX
 ```bibtex
 @misc{mahmud2024maavt,
       title={MA-AVT: Modality Alignment for Parameter-Efficient Audio-Visual Transformers}, 
@@ -88,3 +88,9 @@ If you find this work useful, please consider citing our paper:
       eprint={2406.04930},
       archivePrefix={arXiv}
   }
+```
+
+## Contributors
+<a href="https://github.com/enyac-group/MA-AVT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=enyac-group/MA-AVT" />
+</a>
