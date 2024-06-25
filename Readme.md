@@ -59,7 +59,7 @@ For training the MA-AVT model, please run
 For testing and visualization, simply run
 
 ```python
-      python train_avm_vit.py --id MA-AVT --dataset vggsound \
+      python train_avm_vit.py --id MA-AVT --dataset vggsound --mode test \
                 --data_dir /path/to/LAVISH/data/VGGSound --batch_size 256 --epochs 50 \
                 --num_class 309 --output_dir /path/to/outputs/ --fps 1 --lr 0.01 \
                 --lr_step 15 --mode test --model ma_avt --vis_encoder_type vit \
